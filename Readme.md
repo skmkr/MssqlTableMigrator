@@ -1,7 +1,7 @@
 
-# TableMigrationManager
+# MssqlTableMigrator
 
-`TableMigrationManager` は、データベース間でテーブルを移行するためのクラスライブラリです。このライブラリは、SQL Serverデータベース間のテーブルマイグレーション, スキーマコピーをサポートします。
+`MssqlTableMigrator` は、データベース間でテーブルを移行するためのクラスライブラリです。このライブラリは、SQL Serverデータベース間のテーブルマイグレーション, スキーマコピーをサポートします。
 
 ## 特徴
 
@@ -16,18 +16,18 @@
 NuGetパッケージとしてインストールできます。
 
 ```bash
-dotnet add package TableMigrationManager
+dotnet add package MssqlTableMigrator
 ```
 
 または、`Package Manager Console` を使用してインストールします。
 
 ```powershell
-Install-Package TableMigrationManager
+Install-Package MssqlTableMigrator
 ```
 
 ## 使い方
 
-以下は、`TableMigrationManager` を使用して異なるデータベース間でテーブルを移行する方法の簡単な例です。  
+以下は、`MssqlTableMigrator` を使用して異なるデータベース間でテーブルを移行する方法の簡単な例です。  
 他のサンプルについてはsamplecodesを参照してください
 ```csharp
 using MssqlTableMigrator;
