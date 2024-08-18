@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Platform>AnyCPU</Platform>
+    <Version>1.0.0</Version>
+    <Authors>skmkr</Authors>
+    <Description>Provides table migration and schema copy functionality between different databases in SQL Server.</Description>
+    <PackageTags>database;migration;SQL;cross-platform;.NET Standard</PackageTags>
+    <RepositoryUrl>https://github.com/skmkr/MssqlTableMigrator</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <!-- Debugビルド用のドキュメント出力設定 -->
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin/Debug/netstandard2.0/MssqlTableMigrator.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <!-- Releaseビルド用のドキュメント出力設定 -->
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin/Release/netstandard2.0/MssqlTableMigrator.xml</DocumentationFile>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+</Project>
